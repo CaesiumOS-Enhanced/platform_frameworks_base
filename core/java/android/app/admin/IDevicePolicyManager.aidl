@@ -679,4 +679,6 @@ interface IDevicePolicyManager {
 
     KeymasterCertificateChain generateKeyPairWithScope(in String callerPackage, in String algorithm, in ParcelableKeyGenParameterSpec keySpec,
             in int idAttestationFlags, int scope);
+
+    boolean requireSecureKeyguard(int userHandle);
 }
